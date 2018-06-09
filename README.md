@@ -1,7 +1,6 @@
 
 Logs Analysis
 
-
 Purpose of this project : 
 Build an internal reporting tool that will use information from the database to discover different aspect of the business. Use the data to find out reader's favious. 
 
@@ -11,7 +10,6 @@ print out the answer for three query querions.
 1. What are the most popular three articles of all time? 
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors?
-
 
 
 Technical suppor tools
@@ -64,15 +62,15 @@ DB-API
 
 
 Tables:
-. aticles
-. authors
-. log
+1. aticles
+2. authors
+3. log
 
 View:
-. counterrors
-. allrequests
-. countallrequests
-. error_percentage
+1. counterrors
+2. allrequests
+3. countallrequests
+4. error_percentage
 
 
  1. CREATE VIEW counterrors AS SELECT COUNT(*) AS num,time FROM allerror GROUP BY time ORDER BY num DESC;
