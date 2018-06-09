@@ -1,0 +1,14 @@
+
+
+ The most popular three articles of all time are :
+(1) <Candidate is jerk, alleges rival> ranking in No.1 with total 338647 views
+(2) <Bears love berries, alleges bear> ranking in No.2 with total 253801 views
+(3) <Bad things gone, say good people> ranking in No.3 with total 170098 views
+
+The morst 3 popular authors are :
+(1) Author, Ursula La Multa with total 507594 views
+(2) Author, Rudolf von Treppenwitz with total 423457 views
+(3) Author, Anonymous Contributor with total 170098 views
+
+The error precentage result:
+(1) On 2016-07-17, The error precentage is 2.0% which over 1.0% of the requests.
