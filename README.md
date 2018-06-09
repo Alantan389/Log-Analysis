@@ -72,7 +72,7 @@ View:
 3. countallrequests
 4. error_percentage
 
-
+------------------------------------------------------------------------------------------------------------------------------
  1. CREATE VIEW counterrors AS SELECT COUNT(*) AS num,time FROM allerror GROUP BY time ORDER BY num DESC;
  2. CREATE VIEW allrequests AS SELECT time ::date,status FROM log ORDER BY time;
  3. CREATE VIEW countallrequests AS SELECT count(*) as num,time FROM allrequests GROUP BY time ORDER BY num DESC;
