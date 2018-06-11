@@ -71,19 +71,19 @@ Tables:
 
 View:
 
-1. allerror
+1. allerror /
 CREATE VIEW allerror AS SELECT time ::date,status FROM log where status='404 NOT FOUND' order by time;
 
-2. counterrors
+2. counterrors /
 CREATE VIEW counterrors AS SELECT COUNT(*) AS num,time FROM allerror GROUP BY time ORDER BY num DESC;
 
-3. allrequests
+3. allrequests /
 CREATE VIEW allrequests AS SELECT time ::date,status FROM log ORDER BY time;
 
-4. countallrequests
+4. countallrequests /
 CREATE VIEW countallrequests AS SELECT count(*) as num,time FROM allrequests GROUP BY time ORDER BY num DESC;
 
-5. error_percentage
+5. error_percentage /
 CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countallrequests.num::double precision *100 AS result,counterrors.time FROM counterrors,countallrequests WHERE counterrors.time=countallrequests.time ORDER BY result DESC;
 
 
