@@ -61,22 +61,30 @@ DB-API
 
 
 
+
 Tables:
 1. aticles
 2. authors
 3. log
 
-View:
-1. counterrors
-2. allrequests
-3. countallrequests
-4. error_percentage
 
-------------------------------------------------------------------------------------------------------------------------------
- 1. CREATE VIEW counterrors AS SELECT COUNT(*) AS num,time FROM allerror GROUP BY time ORDER BY num DESC;
- 2. CREATE VIEW allrequests AS SELECT time ::date,status FROM log ORDER BY time;
- 3. CREATE VIEW countallrequests AS SELECT count(*) as num,time FROM allrequests GROUP BY time ORDER BY num DESC;
- 4. CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countallrequests.num::double precision *100 AS result,counterrors.time FROM counterrors,countallrequests WHERE counterrors.time=countallrequests.time ORDER BY result DESC;
+
+View:
+
+1. allerror
+CREATE VIEW allerror AS SELECT time ::date,status FROM log where status='404 NOT FOUND' order by time;
+
+2. counterrors
+CREATE VIEW counterrors AS SELECT COUNT(*) AS num,time FROM allerror GROUP BY time ORDER BY num DESC;
+
+3. allrequests
+CREATE VIEW allrequests AS SELECT time ::date,status FROM log ORDER BY time;
+
+4. countallrequests
+CREATE VIEW countallrequests AS SELECT count(*) as num,time FROM allrequests GROUP BY time ORDER BY num DESC;
+
+5. error_percentage
+CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countallrequests.num::double precision *100 AS result,counterrors.time FROM counterrors,countallrequests WHERE counterrors.time=countallrequests.time ORDER BY result DESC;
 
 
 
