@@ -57,12 +57,12 @@ b. input "vagrant ssh" to log into the VM.
 c. "cd /vagrant" to change to your vagrant directory.
 d. "psql -d news -f newsdata.sql" to load the data and create the tables.
 
-####5. Create correlate tables and views.
+#### 5. Create correlate tables and views.
 run "psql -d news -f views.sql" to create the views.
 
-####6. Use DB-API metho to query table with python codes.
+#### 6. Use DB-API metho to query table with python codes.
 
-####7. Run python script in by inputing "python your_file.py" in the terminal 
+#### 7. Run python script in by inputing "python your_file.py" in the terminal 
 
 
 
@@ -79,7 +79,6 @@ run "psql -d news -f views.sql" to create the views.
 3. error_percentage
 
 #### 1.counterrors 
-
  CREATE VIEW counterrors AS 
  SELECT COUNT(*) 
  AS num,time ::date AS date
