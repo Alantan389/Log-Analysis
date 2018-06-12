@@ -28,15 +28,10 @@ print out the answer for three query querions.
 
 
 ## Skills
-1. vagrnat and virtual set up 
-(https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
-
+1. vagrnat
 2. Python DB-API 
-
 3. Joining tables, The select...where statement, Select clauses,
-
 4. Views
-
 5. The select statement, SQL string functions , Aggregate functions
 
 
@@ -45,28 +40,24 @@ print out the answer for three query querions.
 1. Clone the databses.
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 
-2. Download , set up configer Vagrant and Virtual Box.
+2. Download and set up Vagrant,Virtual Box. 
+https://www.vagrantup.com
+
+3. Configer Vagrant 
 (https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
 
-
-Vagrant and Virtual :
+4. Access to vagrant and link up to the newsdata.sql file :
 input "vagrant up" to start the VM.
 input "vagrant ssh" to log into the VM.
 "cd /vagrant" to change to your vagrant directory.
 "psql -d news -f newsdata.sql" to load the data and create the tables.
 
-
-3. Create database.
-
-4. Create correlate tables and views.
+5. Create correlate tables and views.
 run "psql -d news -f views.sql" to create the views.
 
+6. Use DB-API metho to query table with python codes.
 
-5. Use DB-API metho to query table with python codes.
-
-6. Run python script in by input python test2.py in the terminal 
-
-
+7. Run python script in by inputing "python your_file.py" in the terminal 
 
 
 
@@ -74,7 +65,6 @@ run "psql -d news -f views.sql" to create the views.
 1. aticles
 2. authors
 3. log
-
 
 
 ## View:
