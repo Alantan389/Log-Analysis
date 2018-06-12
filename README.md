@@ -42,16 +42,16 @@ print out the answer for three query querions.
 
 
 ## How to do it ?
-####1. Clone the databses.
+#### 1. Clone the databses.
 https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 
-####2. Download and set up Vagrant,Virtual Box. 
+#### 2. Download and set up Vagrant,Virtual Box. 
 https://www.vagrantup.com
 
-####3. Configer Vagrant 
+#### 3. Configer Vagrant 
 (https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
 
-####4. Access to vagrant and link up to the newsdata.sql file :
+#### 4. Access to vagrant and link up to the newsdata.sql file :
 a. input "vagrant up" to start the VM.
 b. input "vagrant ssh" to log into the VM.
 c. "cd /vagrant" to change to your vagrant directory.
