@@ -103,6 +103,26 @@ run "psql -d news -f views.sql" to create the views.
  ORDER BY result DESC;
 	
 
+### Python codes review 
+#### Make sure your code meet the pep8 requiement
+##### autopep8 automatically formats Python code to conform to the PEP 8 style github guide. It uses the pep8 utility to determine what parts of the code needs to be formatted. autopep8 is capable of fixing most of the formatting issues that can be reported by pep8.
+
+
+##### How to set up Python Pep8 Autoformat 
+
+	### Installation 
+
+	pip install pycodestyle 
+
+	pip install --upgrade autopep8
+
+	easy_install -ZU autopep8
+
+
+	### Excution
+
+	$ autopep8 yourfile.py
+
 
 
 
