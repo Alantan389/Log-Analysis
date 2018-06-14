@@ -62,11 +62,12 @@ run "psql -d news -f views.sql" to create the views.
 aticles
 authors
 log
-View:
 
-##### counterrors
-##### countallrequests
-##### error_percentage
+### View:
+
+counterrors
+countallrequests
+error_percentage
 
 1.counterrors
 
@@ -80,13 +81,13 @@ CREATE VIEW countallrequests AS SELECT count(*) as num, time::date AS date FROM 
 
 CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countallrequests.num::double precision *100 AS result,counterrors.date FROM counterrors,countallrequests WHERE counterrors.date=countallrequests.date ORDER BY result DESC;
 
-Python codes review
+### Python codes review
 
-Make sure your code meets the pep8 requirement
+#### Make sure your code meets the pep8 requirement
 
-Autopep8 automatically formats Python code to conform to the PEP 8 style Github guide. It uses the pep8 utility to determine what parts of the code need to be formatted. autopep8 is capable of fixing most of the formatting issues that can be reported by pep8.
+##### Autopep8 automatically formats Python code to conform to the PEP 8 style Github guide. It uses the pep8 utility to determine what parts of the code need to be formatted. autopep8 is capable of fixing most of the formatting issues that can be reported by pep8.
 
-How to set up Python Pep8 Autoformat
+###### How to set up Python Pep8 Autoformat
 
 Installation
 
