@@ -98,6 +98,16 @@ CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countal
 2.pip install --upgrade autopep8
 3.easy_install -ZU autopep8
 
+
 #### Execution
 1. $ autopep8 yourfile.py
+
+
+### How to test your code style and modify them.
+
+#### 1 CD to your file in terminal
+#### 2 autopep8 yourfile.py
+#### 3 pycodestyle yourfile.py
+
+
 
