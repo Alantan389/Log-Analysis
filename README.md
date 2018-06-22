@@ -34,7 +34,8 @@ Skills
 
 ### How to do it?
 #### 1. Clone the databse.
-https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
+<a href="https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip/">Click Here to explore more information</a>
+
 
 #### 2. Download and set up Vagrant, Virtual Box.
 https://www.vagrantup.com
