@@ -33,15 +33,14 @@ Skills
 
 
 ### How to do it?
-#### 1. Clone the databse.
-<a href="https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip/">Click Here to explore more information</a>
+#### <a href="https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip/">1. Clone the databse.</a>
 
 
-#### 2. Download and set up Vagrant, Virtual Box.
-https://www.vagrantup.com
+#### <a href="https://www.vagrantup.com">2. Download and set up Vagrant, Virtual Box.</a>
 
-#### 3. Configure Vagrant
-(https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
+
+#### <a href="https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile">3. Configure Vagrant </a>
+
 
 #### 4. Access to vagrant and link up to the newsdata.sql file :
 input "vagrant up" to start the VM. 
