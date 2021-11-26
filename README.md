@@ -110,4 +110,19 @@ CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countal
 #### 3 pycodestyle yourfile.py
 
 
+-------------------------------------------------------------------
+
+another way to complete project through jupyter note book + download psql and data into local computer.
+
+here are the steps:
+
+connect jupyter note book to local psql schemer
+
+1.download psql to local computer
+2.download database (newsdata.sql)
+3.create database and table(test1) for further upload newsdata.sql
+4.excute newsdata.sql into psql in local computer
+5.download psql to python3
+6.connect python to local psql table
+7.excute python code
 
