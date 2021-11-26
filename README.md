@@ -112,7 +112,7 @@ CREATE VIEW error_percentage AS SELECT counterrors.num::double precision/countal
 
 -------------------------------------------------------------------
 
-another way to complete project through jupyter note book + download psql and data into local computer.
+## another way to complete project through jupyter note book + download psql and data into local computer.
 
 here are the steps:
 
