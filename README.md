@@ -126,3 +126,12 @@ connect jupyter note book to local psql schemer
 6.connect python to local psql table
 7.excute python code
 
+
+
+
+
+SQL for Python
+https://pypi.org/project/python-sql/
+
+
+
