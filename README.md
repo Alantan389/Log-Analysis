@@ -127,7 +127,7 @@ connect jupyter note book to local psql schemer
 7.excute python code
 
 
-
+-----------------------------------------------------------------------------------------------------------------
 
 
 SQL for Python
