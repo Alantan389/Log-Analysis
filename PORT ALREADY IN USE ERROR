@@ -1,1 +1,12 @@
+postgre sql - port 5432 already in use / Mac book
 
+$ sudo lsof -i :5432
+## When issuing the command above, you will prompted for the computer's password.
+## After entering your password, you should get an output of what's currently running
+## on port 5432
+
+
+
+$ sudo pkill -u postgres
+
+### to kill all PostgreSQL process, issue the above command.
